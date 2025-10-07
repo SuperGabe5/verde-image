@@ -11,10 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
-dnf5 install -y mate
-dnf5 install -y mate-extra 
-dnf5 install -y lightdm
-dnf5 install -y lightdm-gtk-greeter
+dnf5 group install -y mate-desktop-environment
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
